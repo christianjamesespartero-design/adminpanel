@@ -1,0 +1,9 @@
+body { font-family: Arial, Helvetica, sans-serif; background:#111; color:#fff; padding:20px; }
+h1 { text-align:center; margin-bottom:20px; }
+button { padding:10px 20px; margin-bottom:20px; border:none; border-radius:8px; cursor:pointer; background:#ff6b6b; color:#fff; }
+button:hover { background:#ff5252; }
+
+table { width:100%; border-collapse:collapse; }
+th, td { padding:12px; border:1px solid #444; text-align:center; }
+th { background:#222; }
+tr:nth-child(even) { background:#1a1a1a; }
