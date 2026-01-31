@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkPulse - Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <button id="loginBtn">Mag register ka</button>
+
+  <div class="scroll-indicator">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <section style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');">
+    <div class="content">
+      <h2>Manage Stress</h2>
+      <p>Take short breaks during work to refresh your mind.</p>
+    </div>
+  </section>
+
+  <section style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+    <div class="content">
+      <h2>Stay Hydrated</h2>
+      <p>Drinking water regularly helps maintain energy levels.</p>
+    </div>
+  </section>
+
+  <section style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+    <div class="content">
+      <h2>Sleep Well</h2>
+      <p>Quality sleep improves mood and focus.</p>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-card">
+      <h3>About WorkPulse</h3>
+      <p>Helping people manage workplace stress.</p>
+    </div>
+    <div class="info-card">
+      <h3>Our Mission</h3>
+      <p>Promote healthy work habits and work-life balance.</p>
+    </div>
+  </section>
+
+  <div id="overlay"></div>
+
+  <div id="loginForm">
+    <div class="modal-header">
+      <button id="closeForm">&times;</button>
+      <h2>Admin Login</h2>
+    </div>
+
+    <div class="field">
+      <input type="text" id="adminUser" required autocomplete="username">
+      <label for="adminUser">Username</label>
+    </div>
+
+    <div class="field">
+      <input type="password" id="adminPass" required autocomplete="current-password">
+      <label for="adminPass">Password</label>
+    </div>
+
+    <button type="button" onclick="adminLogin()">Login</button>
+
+    <div id="adminPanel">
+      <h3>Create User</h3>
+
+      <div class="field">
+        <input type="text" id="newUser" required autocomplete="off">
+        <label for="newUser">Username</label>
+      </div>
+
+      <div class="field">
+        <input type="password" id="newPass" required autocomplete="new-password">
+        <label for="newPass">Password</label>
+      </div>
+
+      <button type="button" onclick="createUser()">Create Account</button>
+      <p id="msg" role="status"></p>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
